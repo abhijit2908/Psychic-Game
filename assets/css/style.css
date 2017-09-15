@@ -1,0 +1,9 @@
+body{
+	background-image: url(../images/psychic.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+font-weight: bolder;
+font-size: 20px;
+}

@@ -8,7 +8,6 @@ var computerGuess = alphabets[Math.floor(Math.random() * alphabets.length)];
 document.onkeyup = function(event){
 	usrinput=event.key;
 	console.log(usrinput);
-	var computerGuess = alphabets[Math.floor(Math.random() * alphabets.length)];
 	console.log(computerGuess);
 
 	if(usrinput===computerGuess){
@@ -17,6 +16,7 @@ document.onkeyup = function(event){
 		letterguessed=[];
 		console.log(wins);
 		console.log(Guessesleft);
+		computerGuess = alphabets[Math.floor(Math.random() * alphabets.length)];
 	}
 	else if(usrinput!== computerGuess){
 		Guessesleft--;
@@ -28,6 +28,7 @@ document.onkeyup = function(event){
 				Guessesleft=9;
 				letterguessed=[];
 				console.log(Losses);
+				computerGuess = alphabets[Math.floor(Math.random() * alphabets.length)];
 			}
 	}
 
